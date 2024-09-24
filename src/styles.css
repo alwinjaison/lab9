@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Dark background */
+  color: white;
+}
+
+h2,
+h3 {
+  color: #8f4b4b; /* Pink color for headings */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  padding: 20px;
+  border: 2px solid #b55858; /* Pink border for form */
+  border-radius: 10px;
+  background-color: #1a1a1a; /* Darker background for form */
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #b55858; /* Pink border for inputs */
+  border-radius: 5px;
+  width: 80%; /* Make inputs wider */
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #b55858; /* Pink background for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%; /* Make button wider */
+}
+
+button:hover {
+  background-color: #b55858; /* Darker pink on hover */
+}
+
+.event-gallery,
+.dog-gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 15px; /* Space between images */
+}
+
+.image-item img {
+  width: 100%; /* Full width */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for images */
+}
